@@ -4,6 +4,6 @@ namespace Banking.Infrastructure.Interfaces;
 public interface IAccountStore
 {
     void Save(Account account);
-    Account? Get(Guid accountId);
+    Account? Get(string accountId);
     IEnumerable<Account> GetAll();
 }

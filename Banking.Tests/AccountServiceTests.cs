@@ -1,4 +1,5 @@
 using Banking.Application;
+using Banking.Application.DTOs;
 using Banking.Infrastructure;
 
 namespace Banking.Tests;
@@ -14,40 +15,71 @@ public class AccountServiceTests
     }
 
     [Fact]
-    public void CreateAccount_ShouldReturnNewAccount()
+    public void GetBalance_NonExistingAccount_ShouldReturnNotFound()
     {
-        var account = _service.CreateAccount();
-        Assert.NotNull(account);
-        Assert.Equal(0, account.Balance);
+        Assert.Throws<InvalidOperationException>(() => _service.GetBalance("1234"));
     }
 
     [Fact]
-    public void Deposit_ShouldIncreaseBalance()
+    public void Deposit_ShouldCreateAccountWithInitialBalance()
     {
-        var account = _service.CreateAccount();
-        _service.Deposit(account.Id, 100);
-        Assert.Equal(100, _service.GetBalance(account.Id));
+        var request = new EventDTO { Type = "deposit", Destination = "100", Amount = 10 };
+        var result = _service.ProcessEvent(request);
+
+        var balance = _service.GetBalance("100");
+        Assert.Equal(10, balance);
+    }
+
+    [Fact]
+    public void Deposit_ShouldIncreaseBalanceForExistingAccount()
+    {
+        var request1 = new EventDTO { Type = "deposit", Destination = "100", Amount = 10 };
+        _service.ProcessEvent(request1);
+
+        var request2 = new EventDTO { Type = "deposit", Destination = "100", Amount = 10 };
+        _service.ProcessEvent(request2);
+
+        var balance = _service.GetBalance("100");
+        Assert.Equal(20, balance);
+    }
+
+    [Fact]
+    public void Withdraw_NonExistingAccount_ShouldThrow()
+    {
+        var request = new EventDTO { Type = "withdraw", Origin = "200", Amount = 10 };
+        Assert.Throws<InvalidOperationException>(() => _service.ProcessEvent(request));
     }
 
     [Fact]
     public void Withdraw_ShouldDecreaseBalance()
     {
-        var account = _service.CreateAccount();
-        _service.Deposit(account.Id, 200);
-        _service.Withdraw(account.Id, 50);
-        Assert.Equal(150, _service.GetBalance(account.Id));
+        var deposit = new EventDTO { Type = "deposit", Destination = "100", Amount = 20 };
+        _service.ProcessEvent(deposit);
+
+        var withdraw = new EventDTO { Type = "withdraw", Origin = "100", Amount = 5 };
+        _service.ProcessEvent(withdraw);
+
+        var balance = _service.GetBalance("100");
+        Assert.Equal(15, balance);
     }
 
     [Fact]
     public void Transfer_ShouldMoveFundsBetweenAccounts()
     {
-        var from = _service.CreateAccount();
-        var to = _service.CreateAccount();
-        _service.Deposit(from.Id, 300);
+        var deposit = new EventDTO { Type = "deposit", Destination = "100", Amount = 15 };
+        _service.ProcessEvent(deposit);
 
-        _service.Transfer(from.Id, to.Id, 100);
+        var transfer = new EventDTO { Type = "transfer", Origin = "100", Destination = "300", Amount = 15 };
+        _service.ProcessEvent(transfer);
 
-        Assert.Equal(200, _service.GetBalance(from.Id));
-        Assert.Equal(100, _service.GetBalance(to.Id));
+        Assert.Equal(0, _service.GetBalance("100"));
+        Assert.Equal(15, _service.GetBalance("300"));
+    }
+
+    [Fact]
+    public void Transfer_NonExistingOrigin_ShouldThrow()
+    {
+        var transfer = new EventDTO { Type = "transfer", Origin = "200", Destination = "300", Amount = 15 };
+        Assert.Throws<InvalidOperationException>(() => _service.ProcessEvent(transfer));
     }
 }

@@ -1,10 +1,10 @@
 ﻿namespace Banking.Domain;
 public class Account
 {
-    public Guid Id { get; private set; }
+    public string Id { get; private set; }
     public decimal Balance { get; private set; }
 
-    public Account(Guid id)
+    public Account(string id)
     {
         Id = id;
         Balance = 0m;

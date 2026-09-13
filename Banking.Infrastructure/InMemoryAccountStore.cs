@@ -6,14 +6,14 @@ namespace Banking.Infrastructure;
 
 public class InMemoryAccountStore : IAccountStore
 {
-    private readonly ConcurrentDictionary<Guid, Account> _accounts = new();
+    private readonly ConcurrentDictionary<string, Account> _accounts = new();
 
     public void Save(Account account)
     {
         _accounts[account.Id] = account;
     }
 
-    public Account? Get(Guid accountId)
+    public Account? Get(string accountId)
     {
         _accounts.TryGetValue(accountId, out var account);
         return account;

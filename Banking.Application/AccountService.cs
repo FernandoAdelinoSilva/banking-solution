@@ -1,4 +1,5 @@
-﻿using Banking.Application.Interfaces;
+﻿using Banking.Application.DTOs;
+using Banking.Application.Interfaces;
 using Banking.Domain;
 using Banking.Infrastructure.Interfaces;
 
@@ -12,31 +13,66 @@ public class AccountService : IAccountService
         _accountStore = accountStore;
     }
 
-    public Account CreateAccount()
-    {
-        var account = new Account(Guid.NewGuid());
-        _accountStore.Save(account);
-        return account;
-    }
-
-    public void Deposit(Guid accountId, decimal amount)
+    public decimal GetBalance(string accountId)
     {
         var account = GetAccount(accountId);
+        return account.Balance;
+    }
+
+    public object ProcessEvent(EventDTO request)
+    {
+        switch (request.Type.ToLower())
+        {
+            case "deposit":
+                Deposit(request.Destination!, request.Amount);
+                var destBalance = GetBalance(request.Destination!);
+                return new { destination = new { id = request.Destination, balance = destBalance } };
+
+            case "withdraw":
+                Withdraw(request.Origin!, request.Amount);
+                var originBalance = GetBalance(request.Origin!);
+                return new { origin = new { id = request.Origin, balance = originBalance } };
+
+            case "transfer":
+                Transfer(request.Origin!, request.Destination!, request.Amount);
+                var fromBalance = GetBalance(request.Origin!);
+                var toBalance = GetBalance(request.Destination!);
+                return new
+                {
+                    origin = new { id = request.Origin, balance = fromBalance },
+                    destination = new { id = request.Destination, balance = toBalance }
+                };
+
+            default:
+                throw new InvalidOperationException("Invalid event type");
+        }
+    }
+
+    private void Deposit(string accountId, decimal amount)
+    {
+        var account = _accountStore.Get(accountId);
+
+        if (account == null)
+            account = CreateAccount(accountId);
+
         account.Deposit(amount);
         _accountStore.Save(account);
     }
 
-    public void Withdraw(Guid accountId, decimal amount)
+    private void Withdraw(string accountId, decimal amount)
     {
         var account = GetAccount(accountId);
         account.Withdraw(amount);
         _accountStore.Save(account);
     }
 
-    public void Transfer(Guid fromAccountId, Guid toAccountId, decimal amount)
+    private void Transfer(string fromAccountId, string toAccountId, decimal amount)
     {
         var fromAccount = GetAccount(fromAccountId);
-        var toAccount = GetAccount(toAccountId);
+
+        var toAccount = _accountStore.Get(toAccountId);
+        if (toAccount == null)
+            toAccount = CreateAccount(toAccountId);
 
         fromAccount.Withdraw(amount);
         toAccount.Deposit(amount);
@@ -45,18 +81,19 @@ public class AccountService : IAccountService
         _accountStore.Save(toAccount);
     }
 
-    public decimal GetBalance(Guid accountId)
-    {
-        var account = GetAccount(accountId);
-        return account.Balance;
-    }
-
-    private Account GetAccount(Guid accountId)
+    private Account GetAccount(string accountId)
     {
         var account = _accountStore.Get(accountId);
         if (account is null)
             throw new InvalidOperationException("Account not found.");
 
+        return account;
+    }
+
+    private Account CreateAccount(string accountId)
+    {
+        var account = new Account(accountId);
+        _accountStore.Save(account);
         return account;
     }
 }

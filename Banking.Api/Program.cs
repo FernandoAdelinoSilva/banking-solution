@@ -1,6 +1,12 @@
+using Banking.Application.Interfaces;
+using Banking.Application;
+using Banking.Infrastructure.Interfaces;
+using Banking.Infrastructure;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+builder.Services.AddSingleton<IAccountStore, InMemoryAccountStore>();
+builder.Services.AddScoped<IAccountService, AccountService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
