@@ -3,36 +3,64 @@
   "WorkspaceRootPath": "C:\\Users\\ferna\\source\\repos\\banking-solution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3DAE23C8-8614-44EB-8948-FAB03ABAD340}|BankingSolution\\BankingSolution.csproj|c:\\users\\ferna\\source\\repos\\banking-solution\\bankingsolution\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3DAE23C8-8614-44EB-8948-FAB03ABAD340}|BankingSolution\\BankingSolution.csproj|solutionrelative:bankingsolution\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B51A17BE-DFEA-475B-95A2-C19007A9E079}|Banking.Api\\Banking.Api.csproj|c:\\users\\ferna\\source\\repos\\banking-solution\\banking.api\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B51A17BE-DFEA-475B-95A2-C19007A9E079}|Banking.Api\\Banking.Api.csproj|solutionrelative:banking.api\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3DAE23C8-8614-44EB-8948-FAB03ABAD340}|BankingSolution\\BankingSolution.csproj|c:\\users\\ferna\\source\\repos\\banking-solution\\bankingsolution\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3DAE23C8-8614-44EB-8948-FAB03ABAD340}|BankingSolution\\BankingSolution.csproj|solutionrelative:bankingsolution\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B51A17BE-DFEA-475B-95A2-C19007A9E079}|Banking.Api\\Banking.Api.csproj|c:\\users\\ferna\\source\\repos\\banking-solution\\banking.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B51A17BE-DFEA-475B-95A2-C19007A9E079}|Banking.Api\\Banking.Api.csproj|solutionrelative:banking.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3DAE23C8-8614-44EB-8948-FAB03ABAD340}|BankingSolution\\BankingSolution.csproj|c:\\users\\ferna\\source\\repos\\banking-solution\\bankingsolution\\bankingsolution.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{3DAE23C8-8614-44EB-8948-FAB03ABAD340}|BankingSolution\\BankingSolution.csproj|solutionrelative:bankingsolution\\bankingsolution.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+      "AbsoluteMoniker": "D:0:0:{CD33D055-3444-448A-8206-802C50842C50}|Banking.Tests\\Banking.Tests.csproj|c:\\users\\ferna\\source\\repos\\banking-solution\\banking.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD33D055-3444-448A-8206-802C50842C50}|Banking.Tests\\Banking.Tests.csproj|solutionrelative:banking.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2137A84-A9AF-44C1-8950-E0B0BE542765}|Banking.Infrastructure\\Banking.Infrastructure.csproj|c:\\users\\ferna\\source\\repos\\banking-solution\\banking.infrastructure\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2137A84-A9AF-44C1-8950-E0B0BE542765}|Banking.Infrastructure\\Banking.Infrastructure.csproj|solutionrelative:banking.infrastructure\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AA9B222-843C-4F6F-921A-7E6098358CDE}|Banking.Application\\Banking.Application.csproj|c:\\users\\ferna\\source\\repos\\banking-solution\\banking.application\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AA9B222-843C-4F6F-921A-7E6098358CDE}|Banking.Application\\Banking.Application.csproj|solutionrelative:banking.application\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B33D7533-8F46-488E-AC83-5F34EFD0C5AA}|Banking.Domain\\Banking.Domain.csproj|c:\\users\\ferna\\source\\repos\\banking-solution\\banking.domain\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B33D7533-8F46-488E-AC83-5F34EFD0C5AA}|Banking.Domain\\Banking.Domain.csproj|solutionrelative:banking.domain\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ferna\\source\\repos\\banking-solution\\BankingSolution\\BankingSolution.csproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BankingSolution\\BankingSolution.csproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3DAE23C8-8614-44EB-8948-FAB03ABAD340}|BankingSolution\\BankingSolution.csproj|c:\\users\\ferna\\source\\repos\\banking-solution\\bankingsolution\\bankingsolution.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{3DAE23C8-8614-44EB-8948-FAB03ABAD340}|BankingSolution\\BankingSolution.csproj|solutionrelative:bankingsolution\\bankingsolution.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ferna\\source\\repos\\banking-solution\\BankingSolution\\Properties\\launchSettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BankingSolution\\Properties\\launchSettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3DAE23C8-8614-44EB-8948-FAB03ABAD340}|BankingSolution\\BankingSolution.csproj|c:\\users\\ferna\\source\\repos\\banking-solution\\bankingsolution\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{3DAE23C8-8614-44EB-8948-FAB03ABAD340}|BankingSolution\\BankingSolution.csproj|solutionrelative:bankingsolution\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ferna\\source\\repos\\banking-solution\\BankingSolution\\WeatherForecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BankingSolution\\WeatherForecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3DAE23C8-8614-44EB-8948-FAB03ABAD340}|BankingSolution\\BankingSolution.csproj|c:\\users\\ferna\\source\\repos\\banking-solution\\bankingsolution\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{3DAE23C8-8614-44EB-8948-FAB03ABAD340}|BankingSolution\\BankingSolution.csproj|solutionrelative:bankingsolution\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ferna\\source\\repos\\banking-solution\\BankingSolution\\Banking.Api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BankingSolution\\Banking.Api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3DAE23C8-8614-44EB-8948-FAB03ABAD340}|BankingSolution\\BankingSolution.csproj|c:\\users\\ferna\\source\\repos\\banking-solution\\bankingsolution\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3DAE23C8-8614-44EB-8948-FAB03ABAD340}|BankingSolution\\BankingSolution.csproj|solutionrelative:bankingsolution\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ferna\\source\\repos\\banking-solution\\BankingSolution\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BankingSolution\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ferna\\source\\repos\\banking-solution\\BankingSolution\\Controllers\\WeatherForecastController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BankingSolution\\Controllers\\WeatherForecastController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ferna\\source\\repos\\banking-solution\\BankingSolution\\BankingSolution.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BankingSolution\\BankingSolution.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ferna\\source\\repos\\banking-solution\\BankingSolution\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BankingSolution\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ferna\\source\\repos\\banking-solution\\BankingSolution\\appsettings.Development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BankingSolution\\appsettings.Development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -48,70 +76,127 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "WeatherForecast.cs",
-              "DocumentMoniker": "C:\\Users\\ferna\\source\\repos\\banking-solution\\BankingSolution\\WeatherForecast.cs",
-              "RelativeDocumentMoniker": "BankingSolution\\WeatherForecast.cs",
-              "ToolTip": "C:\\Users\\ferna\\source\\repos\\banking-solution\\BankingSolution\\WeatherForecast.cs",
-              "RelativeToolTip": "BankingSolution\\WeatherForecast.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentMoniker": "C:\\Users\\ferna\\source\\repos\\banking-solution\\Banking.Api\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "Banking.Api\\WeatherForecast.cs",
+              "ToolTip": "C:\\Users\\ferna\\source\\repos\\banking-solution\\Banking.Api\\WeatherForecast.cs",
+              "RelativeToolTip": "Banking.Api\\WeatherForecast.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-13T14:34:53.832Z",
+              "WhenOpened": "2026-09-13T14:56:44.072Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ferna\\source\\repos\\banking-solution\\BankingSolution\\Program.cs",
-              "RelativeDocumentMoniker": "BankingSolution\\Program.cs",
-              "ToolTip": "C:\\Users\\ferna\\source\\repos\\banking-solution\\BankingSolution\\Program.cs",
-              "RelativeToolTip": "BankingSolution\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\ferna\\source\\repos\\banking-solution\\Banking.Api\\Program.cs",
+              "RelativeDocumentMoniker": "Banking.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\ferna\\source\\repos\\banking-solution\\Banking.Api\\Program.cs",
+              "RelativeToolTip": "Banking.Api\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-13T14:34:51.906Z",
+              "WhenOpened": "2026-09-13T14:56:06.861Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "BankingSolution.http",
-              "DocumentMoniker": "C:\\Users\\ferna\\source\\repos\\banking-solution\\BankingSolution\\BankingSolution.http",
-              "RelativeDocumentMoniker": "BankingSolution\\BankingSolution.http",
-              "ToolTip": "C:\\Users\\ferna\\source\\repos\\banking-solution\\BankingSolution\\BankingSolution.http",
-              "RelativeToolTip": "BankingSolution\\BankingSolution.http",
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\ferna\\source\\repos\\banking-solution\\Banking.Tests\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "Banking.Tests\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\ferna\\source\\repos\\banking-solution\\Banking.Tests\\UnitTest1.cs",
+              "RelativeToolTip": "Banking.Tests\\UnitTest1.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2026-09-13T14:34:50.996Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-13T14:50:49.966Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\ferna\\source\\repos\\banking-solution\\BankingSolution\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "BankingSolution\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\ferna\\source\\repos\\banking-solution\\BankingSolution\\Properties\\launchSettings.json",
+              "RelativeToolTip": "BankingSolution\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-09-13T14:47:04.485Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\ferna\\source\\repos\\banking-solution\\Banking.Infrastructure\\Class1.cs",
+              "RelativeDocumentMoniker": "Banking.Infrastructure\\Class1.cs",
+              "ToolTip": "C:\\Users\\ferna\\source\\repos\\banking-solution\\Banking.Infrastructure\\Class1.cs",
+              "RelativeToolTip": "Banking.Infrastructure\\Class1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-13T14:42:43.1Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\ferna\\source\\repos\\banking-solution\\Banking.Application\\Class1.cs",
+              "RelativeDocumentMoniker": "Banking.Application\\Class1.cs",
+              "ToolTip": "C:\\Users\\ferna\\source\\repos\\banking-solution\\Banking.Application\\Class1.cs",
+              "RelativeToolTip": "Banking.Application\\Class1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-13T14:42:20.542Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\ferna\\source\\repos\\banking-solution\\Banking.Domain\\Class1.cs",
+              "RelativeDocumentMoniker": "Banking.Domain\\Class1.cs",
+              "ToolTip": "C:\\Users\\ferna\\source\\repos\\banking-solution\\Banking.Domain\\Class1.cs",
+              "RelativeToolTip": "Banking.Domain\\Class1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-13T14:41:53.939Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "C:\\Users\\ferna\\source\\repos\\banking-solution\\BankingSolution\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "BankingSolution\\WeatherForecast.cs",
+              "ToolTip": "C:\\Users\\ferna\\source\\repos\\banking-solution\\BankingSolution\\WeatherForecast.cs",
+              "RelativeToolTip": "BankingSolution\\WeatherForecast.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-13T14:34:53.832Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "BankingSolution.csproj.user",
               "DocumentMoniker": "C:\\Users\\ferna\\source\\repos\\banking-solution\\BankingSolution\\BankingSolution.csproj.user",
               "RelativeDocumentMoniker": "BankingSolution\\BankingSolution.csproj.user",
               "ToolTip": "C:\\Users\\ferna\\source\\repos\\banking-solution\\BankingSolution\\BankingSolution.csproj.user",
               "RelativeToolTip": "BankingSolution\\BankingSolution.csproj.user",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003464|",
-              "WhenOpened": "2026-09-13T14:34:47.788Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-13T14:34:47.788Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BankingSolution",
-              "DocumentMoniker": "C:\\Users\\ferna\\source\\repos\\banking-solution\\BankingSolution\\BankingSolution.csproj",
-              "RelativeDocumentMoniker": "BankingSolution\\BankingSolution.csproj",
-              "ToolTip": "C:\\Users\\ferna\\source\\repos\\banking-solution\\BankingSolution\\BankingSolution.csproj",
-              "RelativeToolTip": "BankingSolution\\BankingSolution.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 9,
+              "Title": "Banking.Api.csproj",
+              "DocumentMoniker": "C:\\Users\\ferna\\source\\repos\\banking-solution\\BankingSolution\\Banking.Api.csproj",
+              "RelativeDocumentMoniker": "BankingSolution\\Banking.Api.csproj",
+              "ToolTip": "C:\\Users\\ferna\\source\\repos\\banking-solution\\BankingSolution\\Banking.Api.csproj",
+              "RelativeToolTip": "BankingSolution\\Banking.Api.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-09-13T14:34:46.81Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-13T14:34:46.81Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\ferna\\source\\repos\\banking-solution\\BankingSolution\\appsettings.json",
               "RelativeDocumentMoniker": "BankingSolution\\appsettings.json",
@@ -119,25 +204,11 @@
               "RelativeToolTip": "BankingSolution\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-09-13T14:34:45.147Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-13T14:34:45.147Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\ferna\\source\\repos\\banking-solution\\BankingSolution\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "BankingSolution\\appsettings.Development.json",
-              "ToolTip": "C:\\Users\\ferna\\source\\repos\\banking-solution\\BankingSolution\\appsettings.Development.json",
-              "RelativeToolTip": "BankingSolution\\appsettings.Development.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-09-13T14:34:43.33Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "WeatherForecastController.cs",
               "DocumentMoniker": "C:\\Users\\ferna\\source\\repos\\banking-solution\\BankingSolution\\Controllers\\WeatherForecastController.cs",
               "RelativeDocumentMoniker": "BankingSolution\\Controllers\\WeatherForecastController.cs",
@@ -145,8 +216,43 @@
               "RelativeToolTip": "BankingSolution\\Controllers\\WeatherForecastController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-13T14:34:40.222Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-13T14:34:40.222Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BankingSolution.http",
+              "DocumentMoniker": "C:\\Users\\ferna\\source\\repos\\banking-solution\\BankingSolution\\BankingSolution.http",
+              "RelativeDocumentMoniker": "BankingSolution\\BankingSolution.http",
+              "ToolTip": "C:\\Users\\ferna\\source\\repos\\banking-solution\\BankingSolution\\BankingSolution.http",
+              "RelativeToolTip": "BankingSolution\\BankingSolution.http",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2026-09-13T14:34:50.996Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ferna\\source\\repos\\banking-solution\\BankingSolution\\Program.cs",
+              "RelativeDocumentMoniker": "BankingSolution\\Program.cs",
+              "ToolTip": "C:\\Users\\ferna\\source\\repos\\banking-solution\\BankingSolution\\Program.cs",
+              "RelativeToolTip": "BankingSolution\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-13T14:34:51.906Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\ferna\\source\\repos\\banking-solution\\BankingSolution\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "BankingSolution\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\ferna\\source\\repos\\banking-solution\\BankingSolution\\appsettings.Development.json",
+              "RelativeToolTip": "BankingSolution\\appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-09-13T14:34:43.33Z"
             }
           ]
         }
