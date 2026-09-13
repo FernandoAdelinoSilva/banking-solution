@@ -1,15 +1,21 @@
 ﻿using Banking.Application.Interfaces;
 using Banking.Domain;
+using Banking.Infrastructure.Interfaces;
 
 namespace Banking.Application;
 public class AccountService : IAccountService
 {
-    private readonly Dictionary<Guid, Account> _accounts = new();
+    private readonly IAccountStore _accountStore;
+
+    public AccountService(IAccountStore accountStore)
+    {
+        _accountStore = accountStore;
+    }
 
     public Account CreateAccount()
     {
         var account = new Account(Guid.NewGuid());
-        _accounts[account.Id] = account;
+        _accountStore.Save(account);
         return account;
     }
 
@@ -17,12 +23,14 @@ public class AccountService : IAccountService
     {
         var account = GetAccount(accountId);
         account.Deposit(amount);
+        _accountStore.Save(account);
     }
 
     public void Withdraw(Guid accountId, decimal amount)
     {
         var account = GetAccount(accountId);
         account.Withdraw(amount);
+        _accountStore.Save(account);
     }
 
     public void Transfer(Guid fromAccountId, Guid toAccountId, decimal amount)
@@ -32,6 +40,9 @@ public class AccountService : IAccountService
 
         fromAccount.Withdraw(amount);
         toAccount.Deposit(amount);
+
+        _accountStore.Save(fromAccount);
+        _accountStore.Save(toAccount);
     }
 
     public decimal GetBalance(Guid accountId)
@@ -42,7 +53,8 @@ public class AccountService : IAccountService
 
     private Account GetAccount(Guid accountId)
     {
-        if (!_accounts.TryGetValue(accountId, out var account))
+        var account = _accountStore.Get(accountId);
+        if (account is null)
             throw new InvalidOperationException("Account not found.");
 
         return account;
