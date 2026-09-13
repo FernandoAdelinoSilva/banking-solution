@@ -64,6 +64,16 @@ public class AccountServiceTests
     }
 
     [Fact]
+    public void Withdraw_InsufficientBalance_ShouldThrow()
+    {
+        var deposit = new EventDTO { Type = "deposit", Destination = "100", Amount = 10 };
+        _service.ProcessEvent(deposit);
+
+        var withdraw = new EventDTO { Type = "withdraw", Origin = "100", Amount = 20 };
+        Assert.Throws<InvalidOperationException>(() => _service.ProcessEvent(withdraw));
+    }
+
+    [Fact]
     public void Transfer_ShouldMoveFundsBetweenAccounts()
     {
         var deposit = new EventDTO { Type = "deposit", Destination = "100", Amount = 15 };
