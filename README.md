@@ -47,6 +47,7 @@ Unit tests cover:
 - Valid transfer → moves funds and creates destination.  
 - Transfer from non-existing origin → error.  
 - Insufficient funds → error.
+- Reset → clears all accounts and balances.
 
 ---
 
