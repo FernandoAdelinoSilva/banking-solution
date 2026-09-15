@@ -92,4 +92,15 @@ public class AccountServiceTests
         var transfer = new EventDTO { Type = "transfer", Origin = "200", Destination = "300", Amount = 15 };
         Assert.Throws<InvalidOperationException>(() => _service.ProcessEvent(transfer));
     }
+
+    [Fact]
+    public void Reset_ShouldClearAllAccounts()
+    {
+        var deposit = new EventDTO { Type = "deposit", Destination = "100", Amount = 10 };
+
+        _service.ProcessEvent(deposit);
+        _service.Reset();
+
+        Assert.Throws<InvalidOperationException>(() => _service.GetBalance("100"));
+    }
 }

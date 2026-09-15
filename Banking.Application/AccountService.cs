@@ -48,6 +48,11 @@ public class AccountService : IAccountService
         }
     }
 
+    public void Reset()
+    {
+        _accountStore.Clear();
+    }
+
     private void Deposit(string accountId, decimal amount)
     {
         var account = _accountStore.Get(accountId);

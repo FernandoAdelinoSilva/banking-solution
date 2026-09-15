@@ -42,4 +42,11 @@ public class AccountController : ControllerBase
             return NotFound(0);
         }
     }
+
+    [HttpPost("reset")]
+    public IActionResult Reset()
+    {
+        _service.Reset();
+        return Ok();
+    }
 }

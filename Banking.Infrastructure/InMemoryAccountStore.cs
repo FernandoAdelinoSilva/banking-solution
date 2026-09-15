@@ -23,4 +23,8 @@ public class InMemoryAccountStore : IAccountStore
     {
         return _accounts.Values;
     }
+    public void Clear()
+    {
+        _accounts.Clear();
+    }
 }

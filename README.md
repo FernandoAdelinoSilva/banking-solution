@@ -8,6 +8,7 @@ The business logic is **real and consistent**: accounts are created, balances ar
 
 ## 🚀 Endpoints
 
+### 🔄 Reset state
 POST /Account/reset
 Clears all accounts and balances.
 
