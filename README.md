@@ -38,7 +38,10 @@ Content-Type: application/json
 ---
 
 ## ✅ Test Coverage
-Unit tests cover:
+
+### Unit Tests
+The **unit tests** validate the internal business logic of the application:
+
 - Non-existing account → error.  
 - Initial deposit → creates account.  
 - Subsequent deposit → increases balance.  
@@ -48,6 +51,11 @@ Unit tests cover:
 - Transfer from non-existing origin → error.  
 - Insufficient funds → error.
 - Reset → clears all accounts and balances.
+
+### Integration Tests
+The **integration tests** validate the real API endpoints via HTTP.  
+They are executed against the API running locally (e.g., `https://localhost:7279`).  
+⚠️ Note: the localhost URL may vary depending on your machine and environment configuration.
 
 ---
 
