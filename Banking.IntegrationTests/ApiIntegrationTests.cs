@@ -15,14 +15,14 @@ public class ApiIntegrationTests
     [Fact]
     public async Task Reset_ShouldReturn200()
     {
-        var response = await _client.PostAsync("/Account/reset", null);
+        var response = await _client.PostAsync("/reset", null);
         Assert.Equal(HttpStatusCode.OK, response.StatusCode);
     }
 
     [Fact]
     public async Task GetBalance_NonExistingAccount_ShouldReturn404()
     {
-        var response = await _client.GetAsync("/Account/balance?account_id=1234");
+        var response = await _client.GetAsync("/balance?account_id=1234");
         Assert.Equal(HttpStatusCode.NotFound, response.StatusCode);
 
         var body = await response.Content.ReadAsStringAsync();
@@ -38,7 +38,7 @@ public class ApiIntegrationTests
             "application/json"
         );
 
-        var response = await _client.PostAsync("/Account/event", payload);
+        var response = await _client.PostAsync("/event", payload);
         Assert.Equal(HttpStatusCode.Created, response.StatusCode);
 
         var body = await response.Content.ReadAsStringAsync();
@@ -54,7 +54,7 @@ public class ApiIntegrationTests
             "application/json"
         );
 
-        var response = await _client.PostAsync("/Account/event", payload);
+        var response = await _client.PostAsync("/event", payload);
         Assert.Equal(HttpStatusCode.Created, response.StatusCode);
 
         var body = await response.Content.ReadAsStringAsync();
@@ -64,7 +64,7 @@ public class ApiIntegrationTests
     [Fact]
     public async Task GetBalance_ExistingAccount_ShouldReturn200()
     {
-        var response = await _client.GetAsync("/Account/balance?account_id=100");
+        var response = await _client.GetAsync("/balance?account_id=100");
         Assert.Equal(HttpStatusCode.OK, response.StatusCode);
 
         var body = await response.Content.ReadAsStringAsync();
@@ -80,7 +80,7 @@ public class ApiIntegrationTests
             "application/json"
         );
 
-        var response = await _client.PostAsync("/Account/event", payload);
+        var response = await _client.PostAsync("/event", payload);
         Assert.Equal(HttpStatusCode.NotFound, response.StatusCode);
 
         var body = await response.Content.ReadAsStringAsync();
@@ -96,7 +96,7 @@ public class ApiIntegrationTests
             "application/json"
         );
 
-        var response = await _client.PostAsync("/Account/event", payload);
+        var response = await _client.PostAsync("/event", payload);
         Assert.Equal(HttpStatusCode.Created, response.StatusCode);
 
         var body = await response.Content.ReadAsStringAsync();
@@ -112,7 +112,7 @@ public class ApiIntegrationTests
             "application/json"
         );
 
-        var response = await _client.PostAsync("/Account/event", payload);
+        var response = await _client.PostAsync("/event", payload);
         Assert.Equal(HttpStatusCode.Created, response.StatusCode);
 
         var body = await response.Content.ReadAsStringAsync();
@@ -131,7 +131,7 @@ public class ApiIntegrationTests
             "application/json"
         );
 
-        var response = await _client.PostAsync("/Account/event", payload);
+        var response = await _client.PostAsync("/event", payload);
         Assert.Equal(HttpStatusCode.NotFound, response.StatusCode);
 
         var body = await response.Content.ReadAsStringAsync();

@@ -5,7 +5,6 @@ using Microsoft.AspNetCore.Mvc;
 namespace Banking.Api.Controllers;
 
 [ApiController]
-[Route("[controller]")]
 public class AccountController : ControllerBase
 {
     private readonly IAccountService _service;
@@ -47,6 +46,6 @@ public class AccountController : ControllerBase
     public IActionResult Reset()
     {
         _service.Reset();
-        return Ok();
+        return Content("OK", "text/plain");
     }
 }
