@@ -24,4 +24,4 @@ jobs:
       run: dotnet build --configuration Release --no-restore
 
     - name: Run Unit Tests
-      run: dotnet test --configuration Release --no-build --verbosity normal
+      run: dotnet test Banking.Tests/Banking.Tests.csproj --configuration Release --no-build --verbosity normal

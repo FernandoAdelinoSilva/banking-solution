@@ -16,11 +16,11 @@ public class AccountController : ControllerBase
     }
 
     [HttpGet("balance")]
-    public IActionResult GetBalance([FromQuery] string accountId)
+    public IActionResult GetBalance([FromQuery] string account_id)
     {
         try
         {
-            var balance = _service.GetBalance(accountId);
+            var balance = _service.GetBalance(account_id);
             return Ok(balance);
         }
         catch

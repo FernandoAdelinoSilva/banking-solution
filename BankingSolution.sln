@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Banking.Tests", "Banking.Te
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Banking.Api", "Banking.Api\Banking.Api.csproj", "{B51A17BE-DFEA-475B-95A2-C19007A9E079}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Banking.IntegrationTests", "Banking.IntegrationTests\Banking.IntegrationTests.csproj", "{0ABB38D5-3898-4810-AF08-59646D33AD40}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{B51A17BE-DFEA-475B-95A2-C19007A9E079}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B51A17BE-DFEA-475B-95A2-C19007A9E079}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B51A17BE-DFEA-475B-95A2-C19007A9E079}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0ABB38D5-3898-4810-AF08-59646D33AD40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ABB38D5-3898-4810-AF08-59646D33AD40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ABB38D5-3898-4810-AF08-59646D33AD40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ABB38D5-3898-4810-AF08-59646D33AD40}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
