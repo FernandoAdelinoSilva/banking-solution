@@ -1,7 +1,5 @@
 # Banking API
 
-![Build & Test](https://github.com/FernandoAdelinoSilva/banking-api/actions/workflows/dotnet.yml/badge.svg)
-
 ## 📌 Overview
 Banking API is a simple service that manages bank accounts with operations for **deposit**, **withdraw**, **transfer**, and **balance inquiry**.  
 The business logic is **real and consistent**: accounts are created, balances are updated, and errors are thrown when rules are violated.
